@@ -1,0 +1,8 @@
+.nyc_output/*
+.deploy/*
+coverage/*
+node_modules/*
+src/tests/*
+server/tests/*
+build/*
+public/*
