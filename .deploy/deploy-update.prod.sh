@@ -1,25 +1,17 @@
 #!/bin/bash
+# Although we can further add more deploy instructions here
+#  I always assume we had to do the initial setup manually
 
 # any future command that fails will exit the script
 set -e
 
 echo "Starting operations"
 
-# starting pm2 daemon
-#/root/.nvm/versions/node/v11.7.0/bin/pm2 status
-
-# Delete the old repo
+# cd into repo directory
 cd /var/www/billable-hours
 
-#ls -a
-
-# clone the repo again
+# pull from repo
 git pull
-
-#source the nvm file. In an non
-#If you are not using nvm, add the actual path like
-# PATH=/home/ubuntu/node/bin:$PATH
-#source /home/ubuntu/.nvm/nvm.sh
 
 #install npm packages
 echo "Installing modules and dependencies"
