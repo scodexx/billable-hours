@@ -4,9 +4,6 @@
 # dependencies
 /node_modules
 
-/src/globals.js
-/server/variables.env
-
 # testing
 /coverage
 /.nyc_output
