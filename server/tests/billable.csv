@@ -1,0 +1,6 @@
+Employee ID,Billable Rate (per hour),Project,Date,Start Time,End Time
+1,300,Google,01/07/2019,9:00,17:00
+2,100,Facebook,01/07/2019,11:00,16:00
+3,50,Google,01/07/2019,10:00,15:00
+1,200,Facebook,01/07/2019,9:00,17:00
+1,300,Google,02/07/2019,9:00,17:00

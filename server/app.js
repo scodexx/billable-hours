@@ -13,7 +13,7 @@ const methodOverride = require('method-override')
 const React = require('react')
 const { renderToString } = require('react-dom/server')
 const { Helmet } = require('react-helmet')
-const App = require('../src/App').default
+const App = require('../src/containers/App').default
 const { StaticRouter } = require('react-router-dom')
 
 // Import server configurations

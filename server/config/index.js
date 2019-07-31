@@ -3,7 +3,7 @@ require('dotenv').config({ path: __dirname + '/../.env' })
 
 let CONFIG = {};
 
-CONFIG.env  = process.env.APP_ENV || 'development'
+CONFIG.env  = process.env.NODE_ENV || 'development'
 CONFIG.port = process.env.APP_PORT || 8091;
 
 CONFIG.db_dialect   = process.env.DB_DIALECT  || 'mysql';
