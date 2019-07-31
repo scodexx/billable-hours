@@ -117,7 +117,7 @@
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run test:frontend && npm run check-coverage"
+      "pre-commit": "npm run test:frontend && npm run coverage:check"
     }
   },
   "nyc": {
