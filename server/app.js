@@ -100,7 +100,7 @@ router.use('*', (req, res) => {
         }
 
         const context = {data: {}, head: []};
-        const markup = `<div id="root" class="h-100p">${renderToString(
+        const markup = `<div id="root">${renderToString(
             <StaticRouter location={req.baseUrl} context={context}>
                 <App />
             </StaticRouter>
@@ -119,7 +119,7 @@ router.use('*', (req, res) => {
         )
         const helmetData = Helmet.renderStatic();
 
-        let htmlData = data.replace('<div id="root" class="h-100p"></div>', markup)
+        let htmlData = data.replace('<div id="root"></div>', markup)
 
         htmlData = htmlData.replace(/<title>...<\/title>/g, helmetData.title.toString())
         htmlData = htmlData.replace(/<meta\/>/g, helmetData.meta.toString())
