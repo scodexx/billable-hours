@@ -53,7 +53,7 @@ Open Merge Request:
   only:
     - /^(feature|issue)\/*/ # Strict naming convention
   script:
-    - bash ./gitlab-deploy/auto-merge-request.sh
+    - bash ./.gitlab-deploy/auto-merge-request.sh
 
 Deploy to Production:
   stage: production
@@ -63,7 +63,7 @@ Deploy to Production:
     - chmod 600  ~/.ssh/id_rsa
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
   script:
-    - bash ./gitlab-deploy/gitlab-deploy.prod.sh
+    - bash ./.gitlab-deploy/gitlab-deploy.prod.sh
   #environment:
     #name: production
     #url: https://liveurl.com # Exposes a button that when clicked take you to the defined URL:
